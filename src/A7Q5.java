@@ -11,7 +11,11 @@ import java.util.Scanner;
  * @author laveh2107
  */
 public class A7Q5 {
-
+/**
+ * Find the random numbers from 1 to 5 and change them into asterisks
+ * @param lines how many lines of random numbers is wanted
+ * @return 
+ */
     public static int chaotic(int lines) {
         //Create for loop to run through the values leading up to the value of the lines
         for (int i = 1; i <= lines; i++) {
