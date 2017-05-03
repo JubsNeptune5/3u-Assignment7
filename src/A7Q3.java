@@ -10,16 +10,28 @@ import java.util.Scanner;
  * @author laveh2107
  */
 public class A7Q3 {
-    
-public static int factors(int num) {
-        for (int i = 1; i < num; i++) {
-            int factor = num/i;        
+
+    public static int factors(int num) {
+        //Create a double of the number to compare withe the integer
+        double NUM = num;
+        //Create a variable for the factors of the number starting wiht the number 
+        int factor = num;
+        
+        //Starts at the number then works their way down to two 
+        for (int i = num; i >= 2; i--) {
+            //Divid the number by the value in the for loop
+            factor = num / i;
+            //Replicate the same thing as a double
+            double FACTOR = NUM / i;
+            //If both the integer and the double are the same, the number is divisable by i equally
+            if (factor == FACTOR) {
+                //Print out the integer
+                System.out.println(factor);
+            }
         }
-
-
-
-
-        return factor;
+        
+        //Return the number as the number divisable by one is itself
+        return num;
 
     }
 
@@ -32,11 +44,12 @@ public static int factors(int num) {
 
         //Input the variable of the mark
         int n = input.nextInt();
-        
-        for (int i = 0; i < n; i++) {
-            System.out.println(factors(n));
-        }
-        
+
+        //print out the list of the multiples of the value n
+        System.out.println("Are the factors of " + n + " are:");
+        System.out.println(factors(n));
+
+
 
     }
 }
