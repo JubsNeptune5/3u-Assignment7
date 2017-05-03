@@ -6,11 +6,15 @@ import java.util.Scanner;
  * and open the template in the editor.
  */
 /**
- *
+ *Find the factors of a number
  * @author laveh2107
  */
 public class A7Q3 {
-
+/**
+ * Divide the number by numbers from number-2 to find factors 
+ * @param num The number given by the user
+ * @return The number divide by it's self
+ */
     public static int factors(int num) {
         //Create a double of the number to compare withe the integer
         double NUM = num;
