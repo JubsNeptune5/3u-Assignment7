@@ -6,7 +6,8 @@ import java.util.Scanner;
  * and open the template in the editor.
  */
 /**
- *Find the last digit of a number
+ * Find the last digit of a number
+ *
  * @author laveh2107
  */
 public class A7Q6 {
@@ -21,6 +22,11 @@ public class A7Q6 {
 
         //find the remainer of the number divided by ten which is the first digit
         int x = num % 10;
+        //Make the negative muber, if any become positive
+        if(x < 0){
+            x=x*(-1);
+        }
+        //Returnn the last digit
         return x;
     }
 

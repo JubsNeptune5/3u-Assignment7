@@ -13,7 +13,8 @@ public class A7Q4 {
 
     /**
      * Math to find new balance of the account with compound interest following
-     *the formula B=P(1+r)^n
+     * the formula B=P(1+r)^n
+     *
      * @param initial The original amount of the account
      * @param rate The interest rate per year
      * @param years The number of years
@@ -21,10 +22,10 @@ public class A7Q4 {
      */
     public static double compoundInterest(double initial, double rate, double years) {
         //find the answer to the (1+r)^n  part of the formula
-        double rSquared = Math.pow((1+rate), years);
+        double rSquared = Math.pow((1 + rate), years);
 
         //Multiply the newly found rSquared by the initial cost
-        double newBalance = rSquared*initial;
+        double newBalance = rSquared * initial;
 
         //Return the newBalance as the answer
         return newBalance;
